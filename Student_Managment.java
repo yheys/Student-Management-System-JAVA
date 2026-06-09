@@ -14,11 +14,9 @@ class Student_Managment{
     public Student getStudentById(int id) {
         for (Student student : students) {
             if (student.getId() == id) {
-                
                 return student;
             }
         }
-        
         return null;
     }
     public boolean updateStudent(int id, String name, String department, double gpa) {
@@ -29,8 +27,7 @@ class Student_Managment{
                 student.setGpa(gpa);
                 return true;
             }
-        }
-        
+        }       
         return false;
     }
     public boolean deleteStudent(int id) {
