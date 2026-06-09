@@ -40,6 +40,10 @@ public class Student {
 
     @Override
     public String toString() {
-        return "ID: " + id + " | Name: " + name + " | Department: " + department + " | GPA: " + gpa;
+        System.out.println("-------------------------------");
+        System.out.println("ID  | Name | Department | GPA");
+        System.out.println("-------------------------------");
+        System.out.println(id + "  | " + name + " | " + department + " | " + gpa);
+        return "";
     }
 }
