@@ -1,4 +1,5 @@
     import java.util.ArrayList;
+    import java.util.InputMismatchException;
     import java.util.Scanner;
     class Main{
         static Scanner input = new Scanner(System.in);
@@ -101,10 +102,10 @@
                         System.out.println("Invalid choice! Please try again.");
                 }
             }
-            }
             catch (InputMismatchException e) {
                 System.out.println("Please enter a valid number!");
                 input.nextLine();
             }
         }
+    }
     }
