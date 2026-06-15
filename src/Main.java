@@ -95,12 +95,25 @@
                             input.nextLine();
                         }
                         break;}
-                    case 6:
-                        System.out.println("Exiting the system. Goodbye!");
+                    case 6: {
+                        sm.generateReport();
+                            break;
+                        }
+                    case 7: {
+                            sm.backupRecords();
+                            System.out.println("Backup created successfully!");
+                            break;
+                        }
+                    case 8: {   
+                            sm.displayFileProperties();
+                            break;
+                        }
+                    case 9:
+                            System.out.println("Exiting the system. Goodbye!");
                         return;
                     default:
-                        System.out.println("Invalid choice! Please try again.");
-                }
+                        System.out.println("Enter 1-9 only.");
+                    }
             }
             catch (InputMismatchException e) {
                 System.out.println("Please enter a valid number!");

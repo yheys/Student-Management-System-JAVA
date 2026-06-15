@@ -38,9 +38,13 @@ class Student implements Serializable {
         this.department = department;
     }
     public void setGpa(double gpa) {
-        this.gpa = gpa;
+        if (gpa >= 0.0 && gpa <= 4.0) {
+            this.gpa = gpa;
+        } else {
+            System.out.println("Invalid GPA! Must be between 0.0 and 4.0");
+        }
     }
-
+    
     @Override
     public String toString() {
         System.out.println("-------------------------------");
