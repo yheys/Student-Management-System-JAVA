@@ -1,7 +1,7 @@
-import java.util.ArrayList;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Date;
-
+import java.util.Scanner;
 class Student_Managment {
     private ArrayList<Student> students;
 
@@ -199,10 +199,10 @@ class Student_Managment {
         System.out.println("================================");
         System.out.println("        STUDENT REPORT          ");
         System.out.println("================================");
-        System.out.println("Total Students : " + total);
-        System.out.printf ("Highest GPA    : ", highest);
-        System.out.printf ("Lowest GPA     : ", lowest);
-        System.out.printf ("Average GPA    : ", average);
+        System.out.println("Total Students : %.2f%n" + total);
+        System.out.printf ("Highest GPA    : %.2f%n", highest);
+        System.out.printf ("Lowest GPA     : %.2f%n", lowest);
+        System.out.printf ("Average GPA    : %.2f%n", average);
         System.out.println("================================");
     }
 

@@ -15,7 +15,10 @@
                 System.out.println("3. Search Student by ID");
                 System.out.println("4. Update Student");
                 System.out.println("5. Delete Student");
-                System.out.println("6. Exit");
+                System.out.println("6. Generate Report");
+                System.out.println("7. Backup Records");
+                System.out.println("8. File Properties");
+                System.out.println("9. Exit");
                 System.out.print("Enter your choice: ");
                 try{
                 int choice = input.nextInt();
@@ -32,6 +35,7 @@
                             String department = input.nextLine();
                             System.out.print("Enter student GPA: ");
                             double gpa = input.nextDouble();
+                            input.nextLine();
                             sm.addStudent(new Student(name, id, department, gpa));
                         } catch (InputMismatchException e) {
                             System.out.println("Please enter a valid number for ID and GPA!");
@@ -72,6 +76,7 @@
                         String department = input.nextLine();
                         System.out.print("Enter new student GPA: ");
                         double gpa = input.nextDouble();
+                        input.nextLine();
                         if (sm.updateStudent(id, name, department, gpa)) {
                             System.out.println("Updated successfully!");
                         } else {
